@@ -1,0 +1,147 @@
+
+.calendar-container {
+  padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendar-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  color: #424242;
+}
+
+.calendar {
+  background: #fff;
+  border-radius: 0;
+  box-shadow: none;
+  overflow-x: auto;
+  display: inline-block;
+}
+
+.calendar-header {
+  display: grid;
+  border: 2px solid #d0d0d0;
+  border-bottom: 2px solid #d0d0d0;
+  width: fit-content;
+}
+
+.time-header {
+  height: 60px;
+  background: #fff;
+  border-right: 2px solid #d0d0d0;
+  width: 120px;
+  box-sizing: border-box;
+}
+
+.date-header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-right: 2px solid #d0d0d0;
+  font-weight: 400;
+  color: #424242;
+  font-size: 24px;
+}
+
+.date-header:last-child {
+  border-right: none;
+}
+
+.calendar-body {
+  display: flex;
+  border: 2px solid #d0d0d0;
+  border-top: none;
+  width: fit-content;
+}
+
+.time-column {
+  width: 120px;
+  flex-shrink: 0;
+  border-right: 2px solid #d0d0d0;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.time-label {
+  height: 108px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 8px 0 0 0;
+  color: #424242;
+  font-size: 24px;
+  font-weight: 400;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.days-wrapper {
+  display: flex;
+}
+
+.day-column {
+  position: relative;
+  flex: 0 0 301px;
+  min-width: 301px;
+  width: 301px;
+  border-right: 2px solid #d0d0d0;
+  background: #fff;
+}
+
+.day-column:last-child {
+  border-right: none;
+}
+
+.time-slot {
+  height: 108px;
+  border-bottom: 2px solid #d0d0d0;
+}
+
+.meeting {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background: #5db9b0;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 20px 20px;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 24px 12px;
+  }
+
+  .calendar-title {
+    font-size: 20px;
+  }
+
+  .time-column {
+    width: 100px;
+  }
+
+  .day-column {
+    min-width: 150px;
+  }
+
+  .time-label {
+    font-size: 18px;
+  }
+
+  .date-header {
+    font-size: 18px;
+  }
+
+  .meeting {
+    font-size: 18px;
+  }
+}
